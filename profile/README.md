@@ -11,6 +11,11 @@
 
 
 
+## 📒 Medium
+[Introduction](https://medium.com/@rabbit_72/self-checkout-service-with-ai-f127dee34ee3)
+
+
+
 ## 📹 Demo
 ### 상품 스캔
   <img width="1470" alt="scan product" src="https://user-images.githubusercontent.com/77673029/215985324-8363c936-91e4-4b92-8342-9ac5d6850523.gif">
