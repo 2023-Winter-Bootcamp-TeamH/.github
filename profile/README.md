@@ -77,13 +77,22 @@
 
 ## 📈 Monitoring
 
-![image](https://user-images.githubusercontent.com/77673029/215633253-6baf3c12-faf7-46f0-b69e-b4a8f4539721.png)
+Grafana + Prometheus, ELK
 
+**flask** |**Node exporter**
+-----|-----
+<img src = "https://user-images.githubusercontent.com/97604953/216542291-c9c00516-dd98-4899-95d6-66f726baa3e3.png" width="1700px">|<img src = "https://user-images.githubusercontent.com/97604953/216541221-d34b6574-bda0-4816-a509-221c82cbacd0.png" width="7000px">
+
+
+**cAdvisor** |**ELK**
+-----|-----
+<img src = "https://user-images.githubusercontent.com/97604953/216544336-0ac8a607-f80a-4118-ba64-009375fd2245.png" width="7000px">|<img src = "https://user-images.githubusercontent.com/77673029/215633253-6baf3c12-faf7-46f0-b69e-b4a8f4539721.png" width="7000px">
 
 
 ## 🤖 AI
 
 ![image](https://user-images.githubusercontent.com/77673029/215633498-0f75dcf2-29d9-4bd3-8f82-1075acc73d60.png)
+
 
 
 
@@ -102,7 +111,9 @@ $ cd buyself-frontend
 $ npm run build
 ```
 
-### 3. Set .env file
+### 3. Env Settings
+
+ - Add /buyself-docker/settings/.env file
 
 ```bash
 ### buyself-backedn/config
@@ -122,12 +133,16 @@ S3_BUCKET_NAME =
 ### 4. Run Docker
 
 ```
-$ docker-compose up --build         # build images and run containers
+$ docker-compose -f docker-compose.prod.yml up --build   # build images and run containers
 ```
 
 
 
 ## 📂 Directory Structure
+
+<details>
+<summary>자세히 보기(여기를 눌러주세요)</summary>
+<div>
 
 ```bash
 📦buyself-docker
@@ -305,6 +320,9 @@ $ docker-compose up --build         # build images and run containers
 ┣ 📂 logging-example
 ┗ 📂 prometheus
 ```
+
+</div>
+</details>
 
 
 
